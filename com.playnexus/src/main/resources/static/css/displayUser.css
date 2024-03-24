@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("/images/back1.jpg");
+	background-repeat: repeat;
+	background-position: fit;
+	font-family: Candara, sans-serif; 
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #494D5F;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header-user {
+	margin-left: 21em;
+	font-family: Candara, sans-serif;
+	color: #22b2da;
+}
+
+.header-last a {
+	background-color: #22b2da;
+	color: #f8e7e7;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-family: Candara, sans-serif;
+	padding: 6px;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.header-last a:hover {
+	background-color: #2772db;
+	color: #f8e7e7;
+	transition: .5s;
+	transform: scale(1.1) rotateY(1deg);
+}
+
+.table-container {
+	margin-top: 10em;
+}
+
+table {
+	width: 80%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background-color: #22b2da;
+}
+
+table, th, td {
+	border: 1px solid #ddd;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+thead {
+	background-color: #494D5F;
+	color: #f8e7e7;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #22b2da;
+}
+
+tbody tr:hover {
+	background-color: #2772db;
+}

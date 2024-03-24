@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+body {
+    background-image: url("/images/back1.jpg");
+	background-repeat: repeat;
+	background-position: fit;
+	font-family: Candara, sans-serif; /* Updated font-family */
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #494D5F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+ 
+}
+
+.header-user{
+	margin-left: 21em;
+	font-family: Candara, sans-serif;
+	color: #22b2da;
+}
+.header-last a{
+	background-color: #22b2da;
+    color: #f8e7e7;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Candara, sans-serif;
+    padding: 6px;
+    text-decoration: none;
+     transition: transform 0.3s ease;
+}
+.header-last a:hover {
+	background-color: #2772db;
+	color: #f8e7e7;
+	transition: .5s;
+	transform: scale(1.1) rotateY(1deg);}
+
+.form-container {
+    max-width: 800px;
+    margin: 10em auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #494D5F;
+    font-family: Candara, sans-serif;
+}
+
+.form-container form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container label {
+    display: block; /* Ensure each label takes up its own line */
+    margin-top: 20px; /* Add some space between labels */
+    color: #f8e7e7; /* Change label text color to white */
+	font-weight: bold;
+	font-family: Candara, sans-serif;
+}
+
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Candara, sans-serif;
+}
+
+.form-container input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22b2da;
+    color: #f8e7e7;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 20px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #2772db;
+}
+
+.logout {
+	font-family: Candara, sans-serif;
+	font-weight: bold;
+}
